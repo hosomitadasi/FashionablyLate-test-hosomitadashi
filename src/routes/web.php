@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FashionablyLateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [FashionablyLateController::class, 'index']);
+Route::post('/fashionablylate/confirm', [FashionablyLateController::class, 'confirm']);
+Route::get('/thanks', [FashionablyLateController::class, 'thanks']);
