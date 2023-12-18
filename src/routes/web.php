@@ -14,10 +14,5 @@ use App\Http\Controllers\FashionablyLateController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/', [FashionablyLateController::class, 'index']);
-Route::post('/fashionablylate/confirm', [FashionablyLateController::class, 'confirm']);
-Route::get('/thanks', [FashionablyLateController::class, 'thanks']);
+Route::post('/FashionablyLate/confirm', [FashionablyLateController::class, 'confirm']);

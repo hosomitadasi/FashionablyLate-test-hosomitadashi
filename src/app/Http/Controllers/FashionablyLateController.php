@@ -13,11 +13,11 @@ class FashionablyLateController extends Controller
 
     public function confirm(Request $request)
     {
-        $contact = $request->only(['name', 'gender', 'mail', 'tel', 'home', 'mantion', 'type', 'content' ]);
-        return view('confirm', ['contact' => $contact]);
+        $FashionablyLate = $request->only(['name', 'gender', 'mail', 'tel', 'address', 'build', 'type', 'content' ]);
+        return view('confirm', compact('FashionablyLate'));
     }
 
-    public function thanks()
+    public function store()
     {
 
     }

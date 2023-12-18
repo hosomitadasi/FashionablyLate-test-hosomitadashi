@@ -11,17 +11,15 @@
 </head>
 
 <body>
-    <header></header>
-
     <main>
-        <form class="thanks__form">
-            <div class="thanks__form-logo">
+        <div class="thanks__content">
+            <div class="thanks__heading">
                 <h2>お問い合わせありがとうございました</h2>
-            </div>
-            <div class="thanks__form-button">
+            </div>HOME
+            <form class="form__button" >
                 <button class="form__button-submit" type="submit">HOME</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </main>
 </body>
 
