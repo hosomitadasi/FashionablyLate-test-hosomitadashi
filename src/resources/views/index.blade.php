@@ -9,7 +9,7 @@
     <div class="contact-form__heading">
         <h2>Contact</h2>
     </div>
-    <form class="form" action="/FashionablyLate/confirm" method="post">
+    <form class="form" action="/fashionablylate/confirm" method="post">
         @csrf
         <div class="form__group">
             <div class="form__group-title">
@@ -94,7 +94,7 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="build" placeholder="千駄ヶ谷マンション101" />
+                    <input type="text" name="building" placeholder="千駄ヶ谷マンション101" />
                 </div>
                 <div class="form__error">
                     <!--エラー置き場-->

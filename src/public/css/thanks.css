@@ -1,0 +1,20 @@
+.thanks__content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thanks__heading {
+    background: brown;
+    color: #fff;
+}
+
+.form__button {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.form__button-submit {
+    background: #000;
+    color: #fff;
+}

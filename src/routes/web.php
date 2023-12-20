@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FashionablyLateController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,5 @@ use App\Http\Controllers\FashionablyLateController;
 |
 */
 
-Route::get('/', [FashionablyLateController::class, 'index']);
-Route::post('/FashionablyLate/confirm', [FashionablyLateController::class, 'confirm']);
+Route::get('/', [ContactController::class, 'index']);
+Route::post('/contact/confirm', [ContactController::class, 'confirm']);
