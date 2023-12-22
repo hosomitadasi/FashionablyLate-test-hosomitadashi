@@ -28,6 +28,9 @@
 
 .form__label--item {
     color: #8b7969;
+    margin-left: 5px;
+        padding: 4px 6px;
+        border-radius: 3px;
 }
 
 .form__label--required {
@@ -38,7 +41,24 @@
     color: #F4F4F4;
 }
 
-.form__input--text {
+.form__input--text input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+    color: #beb1a6;
+    appearance: none;
+}
+
+.form__input--text-gender input{
+
+}
+
+.form__input--text-tel input {
+    padding: 5px;
+    width: 60px;
+    border: 1px solid #ddd;
     font-size: 14px;
     color: #beb1a6;
 }
