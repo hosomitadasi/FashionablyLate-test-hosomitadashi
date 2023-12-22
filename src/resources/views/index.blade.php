@@ -18,8 +18,8 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="name" placeholder="例：山田" />
-                    <input type="text" name="name" placeholder="例：太郎">
+                    <input type="text" name="first_name" placeholder="例：山田" />
+                    <input type="text" name="last_name" placeholder="例：太郎">
                 </div>
                 <div class="form__error">
                     <!--エラー置き場-->
@@ -33,8 +33,10 @@
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__group-content">
-                <div class="form__input--text">
-                    <input type="" name="gender" />
+                <div class="form__input--text-gender">
+                    <label><input type="radio" name="gender" value="男性" />男性</label>
+                    <label><input type="radio" name="gender" value="女性" />女性</label>
+                    <label> <input type="radio" name="gender" value="その他" />その他</label>
                 </div>
                 <div class="form__error">
                     <!--エラー置き場-->
@@ -63,8 +65,12 @@
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__group-content">
-                <div class="form__input--text">
-                    <input type="tel" name="tel" placeholder="080" />
+                <div class="form__input--text-tel">
+                    <input type="tell" name="tell" placeholder="090" />
+                    <span class="form__label--item">-</span>
+                    <input type="tell" name="tell" placeholder="1234" />
+                    <span class="form__label--item">-</span>
+                    <input type="tell" name="tell" placeholder="5678" />
                 </div>
                 <div class="form__error">
                     <!--エラー置き場-->
@@ -109,7 +115,13 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input--text">
-                    <input type="text" name="type" placeholder="選択してください" />
+                    <select name="categry">
+                        <option value="商品のお届けについて">商品のお届けについて</option>
+                        <option value="商品の交換について">商品の交換について</option>
+                        <option value="商品トラブル">商品トラブル</option>
+                        <option value="ショップへのお問い合わせ">ショップへのお問い合わせ</option>
+                        <option value="その他">その他</option>
+                    </select>
                 </div>
                 <div class="form__error">
                     <!--エラー置き場-->
@@ -123,9 +135,7 @@
                 <span class="form__label--required">※</span>
             </div>
             <div class="form__group-content">
-                <div class="form__input--text">
-                    <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
-                </div>
+                <textarea name="detail" placeholder="お問い合わせ内容をご記載ください"></textarea>
                 <div class="form__error">
                     <!--エラー置き場-->
                 </div>
